@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <div id="imageSelector">
+      <img src="https://i.postimg.cc/hjW1x1kh/Cat-with-his-paw-in-the-fish-bowl.jpg">
+      <img src="https://i.postimg.cc/NfgW20Mc/goldfishmatisse.jpg">
+     <img 
+   src="https://i.postimg.cc/TPff7zv6/Matisse.jpg">
+            
+   <img 
+   src="https://i.postimg.cc/Hx9vkNrT/Matisse-Inspired-Creative-Oasis.jpg">" 
+   </div>
+   
+   <div id="canvasHolder">
+   <canvas id="letsPaint" width="720" height="480"></canvas>
+   </div>
+     
+   <div class="controls">
+    <div id="save"><a id="download" ><i class="fa fa-floppy-o" aria-hidden="true"></i></a></div>
+     <div id="clear"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+     <div id="eraser"><i class="fa fa-eraser" aria-hidden="true"></i></div>
+     <div><i class="fa fa-paint-brush brushIcon" aria-hidden="true"><input type="color" name="Mantis" value="#5CB265"  id="colourPicker"></i></div>
+     <div>
+       <input id="thickness" type="range" value="50" min="10" max="100">
+     </div>
+     
+   </div>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+   
+   
+   <div class=""
+   
+       <script src="js/index.js"></script>
+  </body>
+</html>
+   
