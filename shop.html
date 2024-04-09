@@ -10,13 +10,13 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat+Subrayada:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <link rel="stylesheet" href="main.css">
-  <title>Shop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-    crossorigin="anonymous" />
+<title>Shop</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+  crossorigin="anonymous" />
+
 
     
 
@@ -54,27 +54,85 @@
       margin-right: 15px; /* Adjust margin */
       margin-bottom: 15px; /* Adjust margin */
     }
+
+    .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.card-body .btn {
+  margin-top: 10px; /* Add margin to separate the button from other content */
+}
+
+
+.buy-button {
+  display: inline-block;
+  padding: 5px 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 50px;
+}
+
+.buy-button:hover {background-color: #3e8e41}
+
+.buy-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+.container {
+    background-color: white;
+}
+
+.card {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  transition: .5s ease;
+  opacity: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
   </style>
 
   
 </head>
 
 <body>
-
-
-  <body id="index-page">
-    <div class="navbar">
-        <a href="index.html" >Matisse: The Wonder of Colour</a>
-        <div class="dropdown">
-        <button class="dropbtn">More
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
+  <div class="navbar">
+    <a href="index.html">Matisse: The Wonder of Colour</a>
+    <div class="dropdown">
+      <button class="dropbtn">More <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
         <a href="colour-theory.html" target="_self">Matisse: The Artist</a>
         <a href="colour-pallets.html" target="_self">Matisse: Colour Pallets</a>
         <a href="community-gallery.html" target="_self">Community Gallery</a>
         <a href="shop.html" target="_self">Shop</a>
-        </div>
+      </div>
     </div>
   </div>
 
@@ -97,51 +155,52 @@
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop-Goldfish.jpg" class="card-img-top" alt="A still life of a bowl with goldfishes" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Goldfish</h5>
             <p class="card-text">
-             Framed print.
+             Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
+            
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Blue Nude II - Spring 1952.jpg" class="card-img-top" alt="Abstract lady in blue" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Blue Nude II - Spring 1952</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">Framed print</p>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Cover Design for Verve IV, 1943.jpg" class="card-img-top" alt="Two abstract figures dancing in a green  background" />
+          <div class="overlay">Quick View </div>
+
           <div class="card-body">
             <h5 class="card-title">Cover Design for Verve IV, 1943</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Galerie Dina Vierny-1982.jpg" class="card-img-top" alt="A sketch of flowers in a vase" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Galerie Dina Vierny-1982</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
@@ -154,52 +213,52 @@
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Horse, Rider and Clown, 1943-1944.jpg" class="card-img-top" alt="A print of horse and patterns" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Shop_Horse, Rider and Clown, 1943-1944</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Mimosa, 1949-1951.jpg" class="card-img-top" alt="Abstract layers of mimosa in different colours" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Mimosa, 1949-1951</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Red Interior Still Life on a Blue Table, 1947.jpg" class="card-img-top" alt="A still life interior with a blue table" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Red Interior Still Life on a Blue Table, 1947</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_The Clown, 1943.jpg" class="card-img-top" alt="An abstract human figure" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">The Clown, 1943</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
@@ -213,58 +272,61 @@
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_The Open Window, Collioure, 1905.jpg" class="card-img-top" alt="A still life looking outside into a garden" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">The Open Window, Collioure, 1905</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Dance 1.jpg" class="card-img-top" alt="Naked figures dancing in a circle" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Dance 1</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_Destiny, 1946.jpg" class="card-img-top" alt="Abstract colour painting of space and shapes" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">Destiny, 1946</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card text-center">
           <img src="./images/Shop_The Eskimo, 1947.jpg" class="card-img-top" alt="Colour contrast of leave prints" />
+          <div class="overlay">Quick View </div>
           <div class="card-body">
             <h5 class="card-title">The Eskimo, 1947</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+Framed print
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="buy-button">Buy</button>
           </div>
         </div>
       </div>
       <!-- Add more cards for the third row -->
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha2/js/bootstrap.bundle.min.js"></script>
+ 
 </body>
 
 <footer>
