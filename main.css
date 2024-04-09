@@ -86,7 +86,7 @@
 }
 
 .hero-image {
-background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(235, 229, 229, 0.256)), url("photos/cover-photo.png");
+background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(235, 229, 229, 0.256)), url("Images/cover-photo.png");
 height: 50%;
 background-position: center;
 background-repeat: no-repeat;
@@ -122,7 +122,7 @@ padding: 10px;
 }
 
 .hero-image-about {
-background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(235, 229, 229, 0.256)), url("photos/child-painting.png");
+background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(235, 229, 229, 0.256)), url("Images/child-painting.png");
 height: 30%;
 background-position: center;
 background-repeat: no-repeat;
