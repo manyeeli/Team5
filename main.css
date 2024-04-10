@@ -434,4 +434,66 @@ a:active {
   color: rgb(0, 0, 0);
 }
 /* Footer END */
+
+/*Nicole's CSS*/
+
+#h3-artwork
+  {
+    text-align: justify; 
+    text-align: justify; 
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 20px;
+  }
+
+  #colour-buttons
+  {
+    text-align: center; 
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 20px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: rgba(214, 209, 209, 0.901);
+    padding: 20px;
+    text-align: center;
+  }
+  
+.blue-button {
+    background-color: rgb(12, 60, 230);
+    color: white;
+    padding: 30px 20px;
+    border: none; 
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.red-button {
+    background-color: rgb(240, 7, 7);
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.yellow-button {
+    background-color: rgb(249, 184, 19);
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
  
