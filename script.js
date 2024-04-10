@@ -26,3 +26,20 @@ function SlideShow(n) {
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
 } 
+
+const blueButton = document.querySelector(".blue-button");
+
+function changeToOrange(){
+    blueButton.style.backgroundColor = "orange";}
+
+
+const redButton = document.querySelector(".red-button");
+
+function changeToGreen(){
+    redButton.style.backgroundColor = "green";}
+
+
+const yellowButton = document.querySelector(".yellow-button");
+
+function changeToPurple(){
+    yellowButton.style.backgroundColor = "purple";}
