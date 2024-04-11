@@ -4,7 +4,9 @@
   /* outline: 1px solid orange; */
 }
 
-.navbar {
+
+/* CUSTOM NAV*/
+.custom-navbar {
   overflow: hidden;
   background-color: #333;
   font-family: "Montserrat Subrayada", helvetica, Helvetica, Arial, sans-serif;
@@ -13,7 +15,7 @@
   letter-spacing: .2em;
 }
 
-.navbar a {
+.custom-navbar a {
   float: left;
   font-size: 18px;
   font-family: "Montserrat Subrayada", helvetica, Helvetica, Arial, sans-serif;
@@ -25,12 +27,12 @@
   text-decoration: none;
 }
 
-.dropdown {
-  float: right;
-  overflow: hidden;
+.custom-dropdown {
+  float: right !important; 
+  overflow: hidden !important; 
 }
 
-.dropdown .dropbtn {
+.custom-dropdown .custom-dropbtn {
   display: left;
   font-size: 18px;
   font-family: "Montserrat Subrayada", helvetica, Helvetica, Arial, sans-serif;
@@ -45,7 +47,7 @@
   margin: 0; 
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.custom-navbar a:hover, .custom-dropdown:hover .custom-dropbtn {
   font-size: 18px;
   font-family: "Montserrat Subrayada", helvetica, Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -53,7 +55,7 @@
   color: #333;
 }
 
-.dropdown-content {
+.custom-dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -62,7 +64,7 @@
   z-index: 1;
 }
 
-.dropdown-content a {
+.custom-dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -71,15 +73,16 @@
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.custom-dropdown-content a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.custom-dropdown:hover .custom-dropdown-content {
   display: block;
   right: 0px;
 }
 
+/* CUSTOM NAV*/
 /* Image header index */
 #index-page, #index-pagehtml {
   height: 100%;
@@ -205,17 +208,17 @@ padding: 20px;
 
 
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 30px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 30px; 
+  margin-bottom: 16px; 
+  resize: vertical 
 }
 
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -225,19 +228,16 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
-
-
 
 
 /* Contact US END */
@@ -363,7 +363,140 @@ h2 {
 ul > li {
   text-align: center;
   display: inline
-} */
+} 
+
+/* NICOLE CODE */
+
+#h3-artwork
+  {
+    text-align: justify;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 20px;
+  }
+  #colour-buttons
+  {
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: rgba(214, 209, 209, 0.901);
+    padding: 20px;
+    text-align: center;
+  }
+.blue-button {
+    background-color: rgb(12, 60, 230);
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.red-button {
+    background-color: rgb(240, 7, 7);
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.yellow-button {
+    background-color: rgb(249, 184, 19);
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+} 
+/* NICOLE CODE */
+
+/* LYNNE CODE */
+#lynne-imageSelector {
+  display: flex;
+  flex-direction: row;
+  width:800px;
+  height: 250px;
+  padding: 50px; 
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+  #lynne-imageSelector img{
+    display: flex;
+    flex-direction: row;
+    width:23%;
+    margin:5px 1% 5px 1%;
+    height:150px;
+    border:1px solid #000;
+    padding: 10px;
+}
+
+img:hover {
+  background:#FFC8DD;
+  cursor:pointer;
+}
+
+*{box-sizing: border-box;}
+
+#canvasHolder{
+  display: flex;
+  flex-direction: row;
+ 
+  clear:both;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+  canvas{
+    display: flex;
+    flex-direction: row;
+    margin: 75px;
+    border:10px solid #FFC8DD;
+    cursor:crosshair;
+    }
+
+    #controls {
+      display: flex;
+      flex-direction: row;
+      background-color:#cdb4db;
+      clear:both;
+      /* width: 350px;
+      height: 75px; */
+      padding:20px;
+      margin: 30px;
+    }
+
+    /* #save #clear #eraser {
+      margin:0px 20px 0px 20px;
+      float:left;
+    } */
+
+      .fa-paint-brush brushIcon
+      {
+        color:#A2D2FF;
+        float:left;
+        position:relative;
+        font-size:30pt;
+      }
+        
+      #lynne-imageSelector img:hover{
+          opacity:0.7;
+          cursor:pointer;
+        }
+
+/* LYNNE CODE */
 
 /* Footer */
 
@@ -413,7 +546,7 @@ a:active {
 .section-two {
   background-color: #333;
   text-align: center;
-  padding: 50px;
+  padding: 10px;
 }
 
 .fa-linkedin {
@@ -437,12 +570,36 @@ a:active {
 
 /*Nicole's CSS*/
 
+.d-block w-100 {
+  width: 70%;
+}
+
+.carousel-inner{
+  margin: 0 auto;
+  width:70%;
+  max-height: 650px !important;
+}
+
+.carousel-inner img {
+  margin: auto;
+  width:70%;
+  max-height: 650px !important;
+}
+
 #h3-artwork
   {
-    text-align: justify; 
-    text-align: justify; 
-    padding-left: 60px;
-    padding-right: 60px;
+    text-align:justify;  
+    padding-left: 210px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 20px;
+  }
+
+  #h3-artwork-bottom
+  {
+    text-align:center;  
+   
     padding-top: 20px;
     padding-bottom: 10px;
     border: 20px;
@@ -470,30 +627,30 @@ a:active {
 .blue-button {
     background-color: rgb(12, 60, 230);
     color: white;
-    padding: 30px 20px;
+    padding: 15px 20px;
     border: none; 
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left:10px;
 }
 
 .red-button {
     background-color: rgb(240, 7, 7);
     color: white;
-    padding: 30px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .yellow-button {
     background-color: rgb(249, 184, 19);
     color: white;
-    padding: 30px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 80px;
 }
- 
+/* NICOLE CSS END */
